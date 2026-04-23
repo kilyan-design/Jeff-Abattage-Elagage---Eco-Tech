@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Abattage Élagage | Arboriculture de Précision à Aix-en-Provence</title>
+    <meta name="description" content="Expert en élagage et abattage à Aix-en-Provence. Interventions raisonnées adaptées au cycle naturel de l'arbre. Devis rapide, sécurité et travail soigné. Noté 4.9/5.">
+    <meta name="keywords" content="élagage, abattage, arboriste, Aix-en-Provence, taille d'arbre, entretien jardin, Jeff élagage">
+    <meta name="author" content="Jeff Abattage Élagage">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Réseaux Sociaux -->
+    <meta property="og:title" content="Jeff Abattage Élagage | Arboriculture de Précision">
+    <meta property="og:description" content="Interventions raisonnées adaptées au cycle naturel de l'arbre à Aix-en-Provence.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Schema.org JSON-LD pour le SEO Local Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Arborist",
+      "name": "Jeff Abattage Élagage",
+      "image": "https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      "description": "Service d'élagage et d'abattage professionnel, respectant le cycle naturel des arbres.",
+      "telephone": "+33624138096",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Aix-en-Provence",
+        "addressCountry": "FR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "69"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Syne (Titres futuristes) & Inter (Texte) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind Config : Thème Eco-Futuriste -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eco: {
+                            light: '#F4F7F5', // Off-white green tinted
+                            neon: '#00FA9A',  // Bright spring green
+                            emerald: '#059669', // Deep emerald
+                            dark: '#064E3B',  // Very dark green
+                            night: '#020617', // Almost black
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Syne', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(5, 150, 105, 0.1)',
+                        'glow': '0 0 20px rgba(0, 250, 154, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #F4F7F5; color: #020617; overflow-x: hidden; }
+
+        /* Arrière-plan high-tech subtil */
+        .tech-grid {
+            background-image: 
+                radial-gradient(circle at 100% 100%, rgba(5, 150, 105, 0.05) 0, transparent 50%),
+                linear-gradient(rgba(5, 150, 105, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(5, 150, 105, 0.05) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+        }
+
+        /* Glassmorphism de précision */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .glass-dark {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(5, 150, 105, 0.3);
+        }
+
+        /* Animations Reveal (Séquence) */
+        .reveal-seq { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.2, 1, 0.2, 1); }
+        .reveal-seq.active { opacity: 1; transform: translateY(0); }
+
+        /* ==================================================
+           MOTION DESIGN: Bouton Magnétique & Effet Shine
+           ================================================== */
+        .btn-motion {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s cubic-bezier(0.2, 1, 0.2, 1), box-shadow 0.3s;
+        }
+        .btn-motion::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-25deg);
+            animation: shine 6s infinite;
+        }
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 200%; }
+            100% { left: 200%; }
+        }
+
+        /* ==================================================
+           SLIDER SUR-MESURE (Sequence Slide)
+           ================================================== */
+        .slider-viewport { overflow: hidden; position: relative; width: 100%; border-radius: 1.5rem; }
+        .slider-track { display: flex; transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
+        .slide { min-width: 100%; box-sizing: border-box; }
+        
+        .slider-progress { height: 3px; background: rgba(5, 150, 105, 0.2); width: 100%; border-radius: 2px; overflow: hidden; margin-top: 1rem; }
+        .slider-progress-bar { height: 100%; background: #059669; width: 0%; transition: width 0.3s ease; }
+
+        /* Crosshairs (détail tech) */
+        .crosshair { position: absolute; width: 10px; height: 10px; pointer-events: none; }
+        .crosshair::before, .crosshair::after { content: ''; position: absolute; background: #059669; }
+        .crosshair-tl { top: -5px; left: -5px; }
+        .crosshair-tr { top: -5px; right: -5px; }
+        .crosshair-bl { bottom: -5px; left: -5px; }
+        .crosshair-br { bottom: -5px; right: -5px; }
+        .crosshair::before { width: 10px; height: 1px; top: 5px; left: 0; }
+        .crosshair::after { width: 1px; height: 10px; top: 0; left: 5px; }
+
+        /* Animation Scanline (Scanner Devis) */
+        .scanner-line {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 2px;
+            background: #00FA9A;
+            box-shadow: 0 0 10px #00FA9A;
+            opacity: 0;
+        }
+        @keyframes scan {
+            0% { top: 0; opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+    </style>
+</head>
+<body class="tech-grid selection:bg-eco-emerald selection:text-white">
+
+    <!-- En-tête Navigation -->
+    <header class="fixed w-full z-50 transition-all duration-500 py-4" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="glass-panel rounded-full px-6 py-3 flex justify-between items-center shadow-glass" aria-label="Menu principal">
+                
+                <a href="#" class="flex items-center gap-2 group" aria-label="Retour à l'accueil">
+                    <div class="w-10 h-10 rounded-full bg-eco-night flex items-center justify-center text-eco-neon relative overflow-hidden">
+                        <i class="ph-fill ph-leaf text-xl relative z-10"></i>
+                        <div class="absolute inset-0 bg-eco-emerald opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-xl tracking-tight text-eco-night leading-none block">JEFF</span>
+                        <span class="text-[0.6rem] font-bold tracking-widest text-eco-emerald uppercase">Élagage_</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#vision" class="text-sm font-semibold text-gray-600 hover:text-eco-emerald transition-colors">Vision</a>
+                    <a href="#services" class="text-sm font-semibold text-gray-600 hover:text-eco-emerald transition-colors">Expertise</a>
+                    <a href="#avis" class="text-sm font-semibold text-gray-600 hover:text-eco-emerald transition-colors">Data Clients</a>
+                    
+                    <a href="#hub" class="btn-motion magnetic-btn bg-eco-night text-white px-6 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg hover:shadow-glow hover:bg-eco-dark transition-all">
+                        <i class="ph-bold ph-faders"></i> Interface Devis
+                    </a>
+                </div>
+
+                <button class="md:hidden text-eco-night text-2xl" aria-label="Ouvrir le menu">
+                    <i class="ph-bold ph-list"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+            <!-- Élément Parallax / Flottant -->
+            <div class="absolute top-1/4 right-10 w-96 h-96 bg-eco-neon/20 rounded-full blur-[100px] pointer-events-none mix-blend-multiply"></div>
+            <div class="absolute bottom-1/4 left-10 w-72 h-72 bg-eco-emerald/20 rounded-full blur-[80px] pointer-events-none mix-blend-multiply"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
+                
+                <div class="reveal-seq active">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-eco-emerald/30 bg-white/50 backdrop-blur-sm mb-6 shadow-sm">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-eco-neon opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-eco-emerald"></span>
+                        </span>
+                        <span class="text-xs font-bold tracking-widest text-eco-emerald uppercase">Interventions Aix-en-Provence</span>
+                    </div>
+                    
+                    <h1 class="font-display text-5xl md:text-7xl font-extrabold text-eco-night leading-[1.1] mb-6">
+                        L'arboriculture <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-emerald to-eco-neon">de précision.</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 mb-10 max-w-lg leading-relaxed font-medium">
+                        Synchronisation parfaite avec le cycle naturel végétal. Sécurisez votre environnement grâce à une expertise paramétrée pour la santé de vos arbres.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#hub" class="btn-motion magnetic-btn bg-eco-emerald text-white px-8 py-4 rounded-full font-bold shadow-glass hover:bg-eco-dark flex items-center justify-center gap-2 text-center">
+                            Démarrer l'analyse <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                        <a href="tel:0624138096" class="btn-motion glass-panel border border-eco-emerald/20 text-eco-night px-8 py-4 rounded-full font-bold hover:border-eco-emerald flex items-center justify-center gap-2 text-center">
+                            <i class="ph-bold ph-phone-call"></i> 06 24 13 80 96
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Visuel High-Tech Nature -->
+                <div class="relative h-[60vh] min-h-[500px] reveal-seq delay-200">
+                    <div class="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl">
+                        <!-- Crosshairs aux coins -->
+                        <div class="crosshair crosshair-tl z-20"></div>
+                        <div class="crosshair crosshair-tr z-20"></div>
+                        <div class="crosshair crosshair-bl z-20"></div>
+                        <div class="crosshair crosshair-br z-20"></div>
+                        
+                        <!-- Image avec effet de balayage subtil -->
+                        <img src="https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&w=1000" onerror="this.onerror=null; this.src='https://placehold.co/1000x800/059669/ffffff?text=Arboriste+Grimpeur'" loading="eager" alt="Élagage professionnel sur un arbre" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000">
+                        
+                        <!-- Overlay Tech -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-eco-night/80 via-transparent to-transparent"></div>
+                        
+                        <!-- Data Badge -->
+                        <div class="absolute bottom-6 left-6 right-6 glass-panel p-4 rounded-xl flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-eco-emerald uppercase tracking-widest mb-1">Score de fiabilité</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="font-display font-bold text-2xl">4.9/5</span>
+                                    <div class="flex text-yellow-400 text-sm"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-xl font-display font-bold">69</span>
+                                <span class="text-xs text-gray-500 uppercase tracking-widest">Logs Vérifiés</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophie : Le Cycle Naturel -->
+        <section id="vision" class="py-24 relative z-10 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    
+                    <div class="reveal-seq">
+                        <div class="inline-block border border-eco-emerald/30 rounded-full px-4 py-1 text-xs font-bold text-eco-emerald tracking-widest uppercase mb-6 bg-eco-light">
+                            Base de connaissances
+                        </div>
+                        <h2 class="font-display text-4xl lg:text-5xl font-bold mb-6 text-eco-night leading-tight">Le timing<br>fait la perfection.</h2>
+                        
+                        <div class="space-y-6 text-gray-600 text-lg font-light">
+                            <p class="font-medium text-eco-dark border-b border-gray-200 pb-6 text-xl">
+                                L’élagage doit-il être adapté au cycle naturel de l’arbre pour être vraiment efficace ? <span class="text-eco-emerald font-semibold">Un élagage réussi ne dépend pas uniquement du geste, mais aussi du bon moment.</span>
+                            </p>
+                            <p>
+                                Chaque arbre suit un cycle naturel précis : croissance, repos végétatif, floraison… Intervenir au mauvais moment peut ralentir la cicatrisation, affaiblir l’arbre ou compromettre sa reprise. À l’inverse, une intervention bien programmée renforce sa vitalité et sa longévité.
+                            </p>
+                            <p>
+                                En période de repos végétatif, l’arbre supporte mieux la taille. La sève circule moins, les plaies se referment plus facilement et le stress est limité. À d’autres moments de l’année, une taille ciblée permet d’améliorer la structure, d’éliminer le bois mort ou de préparer l’arbre aux conditions climatiques à venir.
+                            </p>
+                            <div class="bg-eco-light p-6 rounded-2xl border border-eco-emerald/20 mt-6 shadow-sm">
+                                <p class="text-sm text-eco-dark">
+                                    À <strong>Aix-en-Provence</strong> et dans ses environs, le climat joue un rôle clé. Chaleur, vent et sécheresse imposent une vraie connaissance du rythme des végétaux pour intervenir sans les fragiliser. Avec <em>Jeff abattage élagage</em>, chaque intervention est pensée en fonction de l’arbre et de la période idéale.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative h-[600px] reveal-seq delay-200 hidden lg:block">
+                        <div class="absolute inset-0 bg-eco-emerald/5 rounded-[3rem] transform rotate-3"></div>
+                        <img src="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=800" onerror="this.onerror=null; this.src='https://placehold.co/800x800/059669/ffffff?text=Forêt+Naturelle'" loading="lazy" alt="Forêt luxuriante et cycle naturel végétal" class="absolute top-0 right-0 w-4/5 h-4/5 object-cover rounded-[2.5rem] shadow-xl border-4 border-white z-10 hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=600" onerror="this.onerror=null; this.src='https://placehold.co/600x600/064E3B/ffffff?text=Arbre+Majestueux'" loading="lazy" alt="Arbre feuillu lors d'une intervention d'élagage" class="absolute bottom-0 left-0 w-3/5 h-3/5 object-cover rounded-[2rem] shadow-2xl border-8 border-white z-20 hover:-translate-y-2 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Séquence de Slides (Horizontal Scroll / Services) -->
+        <section id="services" class="py-24 bg-eco-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-12 reveal-seq text-center">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-eco-night mb-2">Protocoles d'action</h2>
+                    <p class="text-gray-600">Nos modules d'intervention sur site.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <article class="bg-white rounded-3xl border border-gray-100 hover:border-eco-emerald transition-colors group reveal-seq overflow-hidden flex flex-col shadow-sm hover:shadow-glass">
+                        <div class="h-56 relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=600" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Elagage'" loading="lazy" alt="Branches d'arbre luxuriantes pour l'élagage raisonné" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-eco-night/10 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col relative">
+                            <div class="w-12 h-12 bg-eco-night rounded-xl flex items-center justify-center text-eco-neon absolute -top-6 right-8 shadow-lg group-hover:-translate-y-2 transition-transform">
+                                <i class="ph-light ph-scissors text-2xl"></i>
+                            </div>
+                            <h3 class="font-display font-bold text-xl mb-3 mt-2 text-eco-night">Élagage Raisonné</h3>
+                            <p class="text-sm text-gray-600 mb-6">Taille douce, d'éclaircie ou de restructuration pour préserver la santé et l'architecture naturelle du végétal.</p>
+                            <div class="mt-auto w-full h-1 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-eco-emerald w-0 group-hover:w-full transition-all duration-700"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="bg-white rounded-3xl border border-gray-100 hover:border-eco-emerald transition-colors group reveal-seq overflow-hidden flex flex-col shadow-sm hover:shadow-glass" style="transition-delay: 100ms;">
+                        <div class="h-56 relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/320954/pexels-photo-320954.jpeg?auto=compress&cs=tinysrgb&w=600" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Abattage'" loading="lazy" alt="Rondins de bois suite à un abattage sécurisé" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-eco-night/10 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col relative">
+                            <div class="w-12 h-12 bg-eco-night rounded-xl flex items-center justify-center text-eco-neon absolute -top-6 right-8 shadow-lg group-hover:-translate-y-2 transition-transform">
+                                <i class="ph-light ph-warning-circle text-2xl"></i>
+                            </div>
+                            <h3 class="font-display font-bold text-xl mb-3 mt-2 text-eco-night">Abattage Sécurisé</h3>
+                            <p class="text-sm text-gray-600 mb-6">Démontage complexe d'arbres dangereux, avec gestion précise des rétentions et protection de l'infrastructure.</p>
+                            <div class="mt-auto w-full h-1 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-eco-emerald w-0 group-hover:w-full transition-all duration-700"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="bg-white rounded-3xl border border-gray-100 hover:border-eco-emerald transition-colors group reveal-seq overflow-hidden flex flex-col shadow-sm hover:shadow-glass" style="transition-delay: 200ms;">
+                        <div class="h-56 relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=600" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Gestion+Espace'" loading="lazy" alt="Sous-bois dégagé après une gestion de l'espace" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-eco-night/10 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col relative">
+                            <div class="w-12 h-12 bg-eco-night rounded-xl flex items-center justify-center text-eco-neon absolute -top-6 right-8 shadow-lg group-hover:-translate-y-2 transition-transform">
+                                <i class="ph-light ph-recycle text-2xl"></i>
+                            </div>
+                            <h3 class="font-display font-bold text-xl mb-3 mt-2 text-eco-night">Gestion de l'espace</h3>
+                            <p class="text-sm text-gray-600 mb-6">Débroussaillage (OLD), broyage des végétaux et reconditionnement total de la parcelle après opération.</p>
+                            <div class="mt-auto w-full h-1 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-eco-emerald w-0 group-hover:w-full transition-all duration-700"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interface Interactive (Hub Devis / Rappel) -->
+        <section id="hub" class="py-24 relative">
+            <!-- Background element -->
+            <div class="absolute inset-0 bg-eco-dark transform skew-y-[-3deg] z-0"></div>
+            
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                
+                <div class="text-center text-white mb-10 reveal-seq">
+                    <h2 class="font-display text-4xl font-bold mb-4">Système d'estimation</h2>
+                    <p class="text-gray-300">Calculez les paramètres ou initiez une communication directe.</p>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden reveal-seq">
+                    
+                    <!-- Tabs -->
+                    <div class="flex border-b border-gray-100" role="tablist">
+                        <button id="tab-btn-sim" onclick="switchTab('sim')" class="flex-1 py-5 text-sm font-bold tracking-widest uppercase text-eco-emerald border-b-2 border-eco-emerald bg-eco-light/50 transition-colors" role="tab" aria-selected="true">
+                            Module Devis
+                        </button>
+                        <button id="tab-btn-call" onclick="switchTab('call')" class="flex-1 py-5 text-sm font-bold tracking-widest uppercase text-gray-400 border-b-2 border-transparent hover:text-eco-emerald transition-colors" role="tab" aria-selected="false">
+                            Requête Appel
+                        </button>
+                    </div>
+
+                    <!-- Simulateur -->
+                    <div id="pane-sim" class="p-8 md:p-12 relative" role="tabpanel">
+                        <form id="sim-form" class="space-y-8 relative z-10">
+                            <!-- Options avec animation UI -->
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Type d'intervention</label>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <label class="cursor-pointer group">
+                                        <input type="radio" name="sim_type" value="elagage" class="peer sr-only" checked>
+                                        <div class="border-2 border-gray-100 rounded-xl p-4 text-center peer-checked:border-eco-emerald peer-checked:bg-eco-light transition-all">
+                                            <i class="ph-duotone ph-scissors text-3xl mb-2 text-gray-400 peer-checked:text-eco-emerald"></i>
+                                            <div class="font-bold text-eco-night text-sm">Élagage</div>
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer group">
+                                        <input type="radio" name="sim_type" value="abattage" class="peer sr-only">
+                                        <div class="border-2 border-gray-100 rounded-xl p-4 text-center peer-checked:border-eco-emerald peer-checked:bg-eco-light transition-all">
+                                            <i class="ph-duotone ph-tree text-3xl mb-2 text-gray-400 peer-checked:text-eco-emerald"></i>
+                                            <div class="font-bold text-eco-night text-sm">Abattage</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Hauteur estimée (Mètres)</label>
+                                <input type="range" id="sim_height" min="1" max="20" value="8" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-eco-emerald">
+                                <div class="flex justify-between text-xs text-gray-400 font-bold mt-2">
+                                    <span>< 5m</span>
+                                    <span id="height_val" class="text-eco-emerald font-display text-lg">8m</span>
+                                    <span>> 15m</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+                                <div>
+                                    <span class="block text-sm font-bold text-eco-night">Évacuation des déchets</span>
+                                    <span class="text-xs text-gray-500">Traitement et broyage</span>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="sim_evac" class="sr-only peer" checked>
+                                    <div class="w-11 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-eco-emerald"></div>
+                                </label>
+                            </div>
+
+                            <button type="button" id="btn-calc" class="btn-motion magnetic-btn w-full py-4 bg-eco-night text-white rounded-xl font-bold shadow-lg hover:bg-black flex items-center justify-center gap-2">
+                                <i class="ph-bold ph-aperture"></i> Lancer l'analyse
+                            </button>
+
+                            <!-- Résultat avec scanner line -->
+                            <div id="sim-result" class="hidden relative mt-6 bg-eco-light p-6 rounded-xl border border-eco-emerald/30 overflow-hidden text-center">
+                                <div class="scanner-line" id="scanner"></div>
+                                <p class="text-xs font-bold text-eco-emerald uppercase tracking-widest mb-2">Estimation budgétaire</p>
+                                <div class="font-display text-4xl font-extrabold text-eco-night" id="sim-price">-- €</div>
+                                <p class="text-xs text-gray-500 mt-2">Ce calcul est donné à titre indicatif. Un devis formel sera établi sur place.</p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Rappel Automatique -->
+                    <div id="pane-call" class="hidden p-8 md:p-12" role="tabpanel">
+                        <form id="call-form" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2" for="nom">Identité</label>
+                                    <input type="text" id="nom" required placeholder="Votre nom" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:border-eco-emerald focus:ring-4 focus:ring-eco-emerald/10 transition-all text-sm font-medium">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2" for="tel">Coordonnées</label>
+                                    <input type="tel" id="tel" required placeholder="06 XX XX XX XX" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:border-eco-emerald focus:ring-4 focus:ring-eco-emerald/10 transition-all text-sm font-medium">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2" for="creneau">Synchronisation (Créneau)</label>
+                                <select id="creneau" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:border-eco-emerald focus:ring-4 focus:ring-eco-emerald/10 transition-all text-sm font-medium appearance-none bg-white cursor-pointer">
+                                    <option>Dès que possible</option>
+                                    <option>Ce matin (8h-12h)</option>
+                                    <option>Cet après-midi (14h-18h)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" id="btn-submit-call" class="btn-motion magnetic-btn w-full py-4 bg-eco-night text-white rounded-xl font-bold shadow-lg hover:bg-black flex items-center justify-center gap-2 mt-4">
+                                <i class="ph-bold ph-phone-outgoing"></i> Transmettre la requête
+                            </button>
+                            
+                            <div id="call-success" class="hidden bg-green-50 border border-green-200 text-green-700 p-4 rounded-xl text-sm font-bold text-center flex justify-center items-center gap-2">
+                                <i class="ph-fill ph-check-circle text-lg"></i> Requête validée. Jeff vous rappellera.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Séquence de Slides Dynamique (Slider Avis Clients) -->
+        <section id="avis" class="py-24 overflow-hidden bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal-seq">
+                    <div>
+                        <h2 class="font-display text-4xl font-bold text-eco-night mb-2">Base de données clients</h2>
+                        <p class="text-gray-600">Retours d'expérience vérifiés à Aix-en-Provence.</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 flex items-center gap-4 bg-eco-light px-5 py-2 rounded-full border border-eco-emerald/20">
+                        <span class="font-display font-bold text-2xl text-eco-night">4.9</span>
+                        <div class="flex text-yellow-400 text-sm"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest">(69 Avis)</span>
+                    </div>
+                </div>
+
+                <!-- Slider JS -->
+                <div class="slider-viewport reveal-seq delay-100" aria-roledescription="carousel">
+                    <div class="slider-track" id="sliderTrack">
+                        
+                        <!-- Slide 1 -->
+                        <div class="slide p-8 bg-gray-50 rounded-3xl border border-gray-100 relative" role="group" aria-roledescription="slide" aria-label="1 sur 3">
+                            <i class="ph-fill ph-quotes text-6xl text-eco-emerald/10 absolute top-8 right-8"></i>
+                            <div class="flex text-yellow-400 text-sm mb-6"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                            <p class="text-lg text-eco-night font-medium mb-8 pr-12">"Une équipe de jeunes professionnels d’un excellent niveau. Du très beau travail. Je recommande sans hésitation."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-eco-night text-white rounded-full flex items-center justify-center font-bold font-display">AM</div>
+                                <div>
+                                    <div class="font-bold text-eco-night text-sm uppercase tracking-wide">ANDREE MONIN</div>
+                                    <div class="text-xs text-gray-500">Il y a 5 mois</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide p-8 bg-gray-50 rounded-3xl border border-gray-100 relative" role="group" aria-roledescription="slide" aria-label="2 sur 3">
+                            <i class="ph-fill ph-quotes text-6xl text-eco-emerald/10 absolute top-8 right-8"></i>
+                            <div class="flex text-yellow-400 text-sm mb-6"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                            <p class="text-lg text-eco-night font-medium mb-8 pr-12">"Jeff élagage est sérieux et professionnel. Le travail d’élagage a été réalisé avec soin et dans les délais prévus. Équipe compétente."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-eco-night text-white rounded-full flex items-center justify-center font-bold font-display">M</div>
+                                <div>
+                                    <div class="font-bold text-eco-night text-sm uppercase tracking-wide">Megane</div>
+                                    <div class="text-xs text-gray-500">Élagage 3 chênes</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="slide p-8 bg-gray-50 rounded-3xl border border-gray-100 relative" role="group" aria-roledescription="slide" aria-label="3 sur 3">
+                            <i class="ph-fill ph-quotes text-6xl text-eco-emerald/10 absolute top-8 right-8"></i>
+                            <div class="flex text-yellow-400 text-sm mb-6"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                            <p class="text-lg text-eco-night font-medium mb-8 pr-12">"Immense abricotier jamais élagué. En 2j ils étaient là, ponctuels, efficaces. Jardin plus propre qu'à l'arrivée. Soigneux."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-eco-night text-white rounded-full flex items-center justify-center font-bold font-display">EG</div>
+                                <div>
+                                    <div class="font-bold text-eco-night text-sm uppercase tracking-wide">Émilie Gellato</div>
+                                    <div class="text-xs text-gray-500">Il y a un an</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Contrôles Slider -->
+                <div class="mt-6 flex items-center gap-4 reveal-seq delay-200">
+                    <button id="prevSlide" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-eco-light transition-colors" aria-label="Précédent"><i class="ph-bold ph-arrow-left"></i></button>
+                    <div class="slider-progress flex-1">
+                        <div class="slider-progress-bar" id="sliderProgressBar"></div>
+                    </div>
+                    <button id="nextSlide" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-eco-light transition-colors" aria-label="Suivant"><i class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer SEO -->
+    <footer class="bg-eco-night border-t border-white/5 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-full bg-eco-emerald flex items-center justify-center text-white">
+                            <i class="ph-fill ph-leaf"></i>
+                        </div>
+                        <span class="font-display font-bold text-xl text-white">JEFF Élagage</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Expertise en arboriculture de précision. Nous allions esthétique, sécurité et respect de la biologie végétale.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Navigation</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#vision" class="hover:text-eco-neon transition-colors">Notre vision du cycle naturel</a></li>
+                        <li><a href="#services" class="hover:text-eco-neon transition-colors">Protocoles et Expertise</a></li>
+                        <li><a href="#hub" class="hover:text-eco-neon transition-colors">Estimer un budget</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Contact & Localisation</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="ph-bold ph-map-pin text-eco-emerald"></i> Aix-en-Provence & Alentours
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="ph-bold ph-phone text-eco-emerald"></i> <a href="tel:0624138096" class="hover:text-white transition-colors">06 24 13 80 96</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="ph-bold ph-clock text-eco-emerald"></i> Lun-Sam : 08:00 - 20:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 Jeff Abattage Élagage. Tous droits réservés.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Mentions Légales</a>
+                    <a href="#" class="hover:text-white transition-colors">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS : Interactions & Animations -->
+    <script>
+        // 1. Navbar Glass Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-white/70', 'backdrop-blur-md', 'shadow-sm');
+                nav.classList.remove('py-4');
+                nav.classList.add('py-2');
+            } else {
+                nav.classList.remove('bg-white/70', 'backdrop-blur-md', 'shadow-sm', 'py-2');
+                nav.classList.add('py-4');
+            }
+        });
+
+        // 2. Intersection Observer (Séquences d'apparition)
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal-seq').forEach(el => observer.observe(el));
+
+        // 3. Motion Design : Boutons Magnétiques
+        document.querySelectorAll('.magnetic-btn').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0px, 0px)';
+            });
+        });
+
+        // 4. Système d'Onglets (Hub)
+        function switchTab(tabId) {
+            const isSim = tabId === 'sim';
+            // Boutons
+            document.getElementById('tab-btn-sim').className = `flex-1 py-5 text-sm font-bold tracking-widest uppercase transition-colors ${isSim ? 'text-eco-emerald border-b-2 border-eco-emerald bg-eco-light/50' : 'text-gray-400 border-b-2 border-transparent hover:text-eco-emerald'}`;
+            document.getElementById('tab-btn-call').className = `flex-1 py-5 text-sm font-bold tracking-widest uppercase transition-colors ${!isSim ? 'text-eco-emerald border-b-2 border-eco-emerald bg-eco-light/50' : 'text-gray-400 border-b-2 border-transparent hover:text-eco-emerald'}`;
+            // Panneaux
+            document.getElementById('pane-sim').classList.toggle('hidden', !isSim);
+            document.getElementById('pane-call').classList.toggle('hidden', isSim);
+        }
+
+        // 5. Logique Simulateur (Avec animation Scanner)
+        const rangeInput = document.getElementById('sim_height');
+        const heightVal = document.getElementById('height_val');
+        
+        rangeInput.addEventListener('input', (e) => {
+            heightVal.textContent = e.target.value + 'm';
+        });
+
+        document.getElementById('btn-calc').addEventListener('click', () => {
+            const btn = document.getElementById('btn-calc');
+            const resultBox = document.getElementById('sim-result');
+            const priceEl = document.getElementById('sim-price');
+            const scanner = document.getElementById('scanner');
+            
+            // Calcul basique
+            const type = document.querySelector('input[name="sim_type"]:checked').value;
+            const height = parseInt(rangeInput.value);
+            const evac = document.getElementById('sim_evac').checked;
+
+            let base = type === 'elagage' ? 100 : 200;
+            let total = base + (height * 15);
+            if(evac) total += 50;
+
+            // UI Animation
+            btn.innerHTML = '<i class="ph-bold ph-spinner-gap animate-spin"></i> Analyse en cours...';
+            resultBox.classList.remove('hidden');
+            priceEl.style.opacity = '0';
+            
+            // Lancer le scanner CSS
+            scanner.style.animation = 'none';
+            void scanner.offsetWidth; // trigger reflow
+            scanner.style.animation = 'scan 1.5s ease-out';
+
+            setTimeout(() => {
+                priceEl.innerText = `~ ${total} €`;
+                priceEl.style.opacity = '1';
+                btn.innerHTML = '<i class="ph-bold ph-aperture"></i> Mettre à jour l\'analyse';
+            }, 1500);
+        });
+
+        // 6. Formulaire de rappel
+        document.getElementById('call-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('btn-submit-call');
+            const success = document.getElementById('call-success');
+            
+            btn.innerHTML = '<i class="ph-bold ph-spinner-gap animate-spin"></i> Transmission...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                success.classList.remove('hidden');
+                btn.innerHTML = '<i class="ph-bold ph-check"></i> Transmis';
+                e.target.reset();
+                setTimeout(() => {
+                    success.classList.add('hidden');
+                    btn.innerHTML = '<i class="ph-bold ph-phone-outgoing"></i> Transmettre la requête';
+                    btn.disabled = false;
+                }, 4000);
+            }, 1000);
+        });
+
+        // 7. Slider JS Sur-mesure (Sequence Slide)
+        const track = document.getElementById('sliderTrack');
+        const slides = document.querySelectorAll('.slide');
+        const btnPrev = document.getElementById('prevSlide');
+        const btnNext = document.getElementById('nextSlide');
+        const progressBar = document.getElementById('sliderProgressBar');
+        
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        let slideInterval;
+
+        function updateSlider() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            progressBar.style.width = `${((currentIndex + 1) / totalSlides) * 100}%`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        btnNext.addEventListener('click', () => { nextSlide(); resetInterval(); });
+        btnPrev.addEventListener('click', () => { prevSlide(); resetInterval(); });
+
+        function startInterval() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startInterval();
+        }
+
+        // Init Slider
+        updateSlider();
+        startInterval();
+
+    </script>
+</body>
+</html>
