@@ -21,7 +21,7 @@
       "@context": "https://schema.org",
       "@type": "Arborist",
       "name": "Jeff Abattage Élagage",
-      "image": "https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      "image": "https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       "description": "Service d'élagage et d'abattage professionnel, respectant le cycle naturel des arbres.",
       "telephone": "+33624138096",
       "address": {
@@ -94,12 +94,6 @@
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.5);
-        }
-
-        .glass-dark {
-            background: rgba(2, 6, 23, 0.85);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(5, 150, 105, 0.3);
         }
 
         /* Animations Reveal (Séquence) */
@@ -227,15 +221,15 @@
 
     <!-- Hero Section -->
     <main>
-        <!-- Ajustement des paddings (pt-32 pb-16) pour mobile -->
-        <section class="relative min-h-[100vh] flex items-center pt-32 pb-16 lg:py-0 overflow-hidden">
+        <section class="relative min-h-[100vh] flex items-center pt-28 pb-12 lg:pt-32 lg:pb-16 lg:py-0 overflow-hidden">
             <!-- Élément Parallax / Flottant -->
             <div class="absolute top-0 right-0 lg:top-1/4 lg:right-10 w-64 h-64 lg:w-96 lg:h-96 bg-eco-neon/20 rounded-full blur-[80px] lg:blur-[100px] pointer-events-none mix-blend-multiply"></div>
             <div class="absolute bottom-10 left-0 lg:bottom-1/4 lg:left-10 w-48 h-48 lg:w-72 lg:h-72 bg-eco-emerald/20 rounded-full blur-[60px] lg:blur-[80px] pointer-events-none mix-blend-multiply"></div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-2 gap-10 lg:gap-12 items-center relative z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center relative z-10">
                 
-                <div class="reveal-seq active">
+                <!-- Zone Texte -->
+                <div class="reveal-seq active min-w-0">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-eco-emerald/30 bg-white/50 backdrop-blur-sm mb-6 shadow-sm">
                         <span class="relative flex h-2 w-2">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-eco-neon opacity-75"></span>
@@ -244,8 +238,8 @@
                         <span class="text-[0.65rem] sm:text-xs font-bold tracking-widest text-eco-emerald uppercase">Interventions Aix-en-Provence</span>
                     </div>
                     
-                    <!-- Tailles de texte responsives -->
-                    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold text-eco-night leading-[1.1] mb-6">
+                    <!-- Tailles de texte ajustées (text-4xl à text-6xl) + break-words pour éviter tout dépassement -->
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-eco-night leading-[1.1] mb-5 tracking-tight break-words hyphens-auto">
                         L'arboriculture <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-emerald to-eco-neon">de précision.</span>
                     </h1>
@@ -254,7 +248,6 @@
                         Synchronisation parfaite avec le cycle naturel végétal. Sécurisez votre environnement grâce à une expertise paramétrée pour la santé de vos arbres.
                     </p>
                     
-                    <!-- Boutons pleine largeur sur mobile (w-full sm:w-auto) -->
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#hub" class="w-full sm:w-auto btn-motion bg-eco-emerald text-white px-8 py-4 rounded-full font-bold shadow-glass hover:bg-eco-dark flex items-center justify-center gap-2 text-center lg:magnetic-btn">
                             Démarrer l'analyse <i class="ph-bold ph-arrow-right"></i>
@@ -265,8 +258,8 @@
                     </div>
                 </div>
 
-                <!-- Visuel High-Tech Nature : hauteur ajustée sur mobile (h-[350px] sm:h-[450px]) -->
-                <div class="relative h-[350px] sm:h-[450px] lg:h-[60vh] lg:min-h-[500px] reveal-seq delay-200 mt-6 lg:mt-0">
+                <!-- Visuel High-Tech Nature : min-w-0 évite au grid de casser -->
+                <div class="relative h-[300px] sm:h-[450px] lg:h-[60vh] lg:min-h-[500px] w-full reveal-seq delay-200 min-w-0">
                     <div class="absolute inset-0 rounded-3xl lg:rounded-[2rem] overflow-hidden shadow-2xl">
                         <!-- Crosshairs aux coins -->
                         <div class="crosshair crosshair-tl z-20"></div>
@@ -274,8 +267,8 @@
                         <div class="crosshair crosshair-bl z-20"></div>
                         <div class="crosshair crosshair-br z-20"></div>
                         
-                        <!-- Image avec effet de balayage subtil -->
-                        <img src="https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&w=1000" onerror="this.onerror=null; this.src='https://placehold.co/1000x800/059669/ffffff?text=Arboriste+Grimpeur'" loading="eager" alt="Élagage professionnel sur un arbre" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000">
+                        <!-- Vraie Image Arboriste Grimpeur -->
+                        <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" onerror="this.onerror=null; this.src='https://placehold.co/1000x800/059669/ffffff?text=Arboriste+Grimpeur'" loading="eager" alt="Élagage professionnel sur un arbre par un arboriste grimpeur" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000">
                         
                         <!-- Overlay Tech -->
                         <div class="absolute inset-0 bg-gradient-to-t from-eco-night/90 via-transparent to-transparent"></div>
@@ -303,9 +296,9 @@
         <section id="vision" class="py-16 md:py-24 relative z-10 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Grid gap réduit sur mobile -->
-                <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
                     
-                    <div class="reveal-seq">
+                    <div class="reveal-seq min-w-0">
                         <div class="inline-block border border-eco-emerald/30 rounded-full px-3 py-1 sm:px-4 sm:py-1 text-[0.65rem] sm:text-xs font-bold text-eco-emerald tracking-widest uppercase mb-4 sm:mb-6 bg-eco-light">
                             Base de connaissances
                         </div>
@@ -330,10 +323,10 @@
                     </div>
 
                     <!-- Images visibles sur mobile avec des hauteurs adaptées -->
-                    <div class="relative h-[300px] sm:h-[450px] lg:h-[600px] reveal-seq delay-200 mt-8 lg:mt-0">
+                    <div class="relative h-[300px] sm:h-[450px] lg:h-[600px] w-full reveal-seq delay-200 min-w-0">
                         <div class="absolute inset-0 bg-eco-emerald/5 rounded-[2rem] lg:rounded-[3rem] transform rotate-3"></div>
-                        <img src="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=800" onerror="this.onerror=null; this.src='https://placehold.co/800x800/059669/ffffff?text=Forêt+Naturelle'" loading="lazy" alt="Forêt luxuriante et cycle naturel végétal" class="absolute top-0 right-0 w-[75%] h-[75%] object-cover rounded-2xl lg:rounded-[2.5rem] shadow-xl border-4 border-white z-10 hover:scale-105 transition-transform duration-500">
-                        <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=600" onerror="this.onerror=null; this.src='https://placehold.co/600x600/064E3B/ffffff?text=Arbre+Majestueux'" loading="lazy" alt="Arbre feuillu lors d'une intervention d'élagage" class="absolute bottom-0 left-0 w-[60%] h-[60%] object-cover rounded-2xl lg:rounded-[2rem] shadow-2xl border-4 lg:border-8 border-white z-20 hover:-translate-y-2 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null; this.src='https://placehold.co/800x800/059669/ffffff?text=Forêt+Naturelle'" loading="lazy" alt="Forêt luxuriante et cycle naturel végétal" class="absolute top-0 right-0 w-[75%] h-[75%] object-cover rounded-2xl lg:rounded-[2.5rem] shadow-xl border-4 border-white z-10 hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1542838776-80414afc2fc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://placehold.co/600x600/064E3B/ffffff?text=Arbre+Majestueux'" loading="lazy" alt="Arbre feuillu lors d'une intervention d'élagage" class="absolute bottom-0 left-0 w-[60%] h-[60%] object-cover rounded-2xl lg:rounded-[2rem] shadow-2xl border-4 lg:border-8 border-white z-20 hover:-translate-y-2 transition-transform duration-500">
                     </div>
                 </div>
             </div>
@@ -351,7 +344,7 @@
                     <!-- Service 1 -->
                     <article class="bg-white rounded-3xl border border-gray-100 hover:border-eco-emerald transition-colors group reveal-seq overflow-hidden flex flex-col shadow-sm hover:shadow-glass">
                         <div class="h-48 sm:h-56 relative overflow-hidden">
-                            <img src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=600" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Elagage'" loading="lazy" alt="Branches d'arbre luxuriantes pour l'élagage raisonné" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <img src="https://images.unsplash.com/photo-1588602081512-4217117ebbc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Elagage'" loading="lazy" alt="Branches d'arbre luxuriantes pour l'élagage raisonné" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-eco-night/10 group-hover:bg-transparent transition-colors"></div>
                         </div>
                         <div class="p-6 sm:p-8 flex-1 flex flex-col relative">
@@ -369,7 +362,7 @@
                     <!-- Service 2 -->
                     <article class="bg-white rounded-3xl border border-gray-100 hover:border-eco-emerald transition-colors group reveal-seq overflow-hidden flex flex-col shadow-sm hover:shadow-glass" style="transition-delay: 100ms;">
                         <div class="h-48 sm:h-56 relative overflow-hidden">
-                            <img src="https://images.pexels.com/photos/320954/pexels-photo-320954.jpeg?auto=compress&cs=tinysrgb&w=600" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Abattage'" loading="lazy" alt="Rondins de bois suite à un abattage sécurisé" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <img src="https://images.unsplash.com/photo-1558904541-efa843a96f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Abattage'" loading="lazy" alt="Rondins de bois suite à un abattage sécurisé" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-eco-night/10 group-hover:bg-transparent transition-colors"></div>
                         </div>
                         <div class="p-6 sm:p-8 flex-1 flex flex-col relative">
@@ -387,7 +380,7 @@
                     <!-- Service 3 -->
                     <article class="bg-white rounded-3xl border border-gray-100 hover:border-eco-emerald transition-colors group reveal-seq overflow-hidden flex flex-col shadow-sm hover:shadow-glass" style="transition-delay: 200ms;">
                         <div class="h-48 sm:h-56 relative overflow-hidden">
-                            <img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=600" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Gestion+Espace'" loading="lazy" alt="Sous-bois dégagé après une gestion de l'espace" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=Gestion+Espace'" loading="lazy" alt="Sous-bois dégagé après une gestion de l'espace" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-eco-night/10 group-hover:bg-transparent transition-colors"></div>
                         </div>
                         <div class="p-6 sm:p-8 flex-1 flex flex-col relative">
